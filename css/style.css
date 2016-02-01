@@ -1,0 +1,7 @@
+nav{padding: 0px 100px !important;}
+.custom-search-form{width:100%;}
+.page-list{max-height: 450px;overflow-y: auto;overflow-x: hidden;margin-top: 35px;border: #DDDDDD 1px solid; padding: 0px; border-radius: 5px;}
+.details-btn{float: right; margin-top: -35px}
+.fb-list-icon{font-size: 36px;}
+.desc-body{max-height: 335px;overflow: auto;}
+.hidden{display:none;}

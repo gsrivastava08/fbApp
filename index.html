@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-<script src="./js/app.js" type="text/javascript"></script>
-<script src="./js/main.js" type="text/javascript"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Projectplace Facebook page search</title>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/app.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+  </head>
+	<body>	
 
-</body>
+        <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">FB-PageSearch</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-md-7">
+      		<div class="row">
+        		<div class="col-lg-8">
+                    <div class="input-group custom-search-form">
+                      <input type="text" class="form-control" placeholder="Search pages" id="pageSearch">
+                     </div><!-- /input-group -->
+            </div>
+            <div class="col-lg-4">
+                  <button class="btn btn-primary" type="button" id="searchBtn">
+                    Search Pages
+                  </button>        
+            </div>
+      	  </div>
+      	   <div class="row">
+              <div class="col-md-10 page-list hidden" id="display-list">
+                  <div class="panel panel-default">
+                      
+                      <ul class="list-group" id="page-list">
+
+                      </ul>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+      	   </div>
+      </div>
+    	<div class="col-md-5 hidden" id="page-desc">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                   <section class="post-heading">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img id="pageImage" class="media-object photo-profile" src="https://mktcdn.500px.org/assets/icons/lightbox_placeholder_icon@2x-a5b4509ac42a996d07b9f32379f1eae19310a57d38e5914c59230bfa36815c9a.png" width="40" height="40">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a href="#" class="anchor-username"><h4 class="media-heading" id="pageDetailTitle"></h4></a> 
+                                    <a href="#" class="anchor-time" id="aboutPage"></a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>             
+                   </section>
+                   <section class="post-body desc-body">
+                       <p id="descBody">
+                         
+                       </p>
+                   </section>
+                   <section class="post-footer">
+                       <hr>
+                       <div class="post-footer-option">
+                            <ul class="list-unstyled">
+                                <li>
+                                  <a href="#" id="likeStatusLink"><i class="glyphicon glyphicon-thumbs-up"></i> 
+                                    <span id="likeStatus">Like</span>
+                                  </a>
+                                </li>
+                            </ul>
+                       </div>
+                   </section>
+                </div>
+            </div>   
+    	</div>
+
+
+      <div class="col-md-5" id="gaurav-profile">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                   <section class="post-heading">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="media">
+                                  <div class="media-left">
+                                    <a href="#">
+                                      <img id="pageImage" class="media-object photo-profile" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/p50x50/10981955_827140947353368_7464999591390256644_n.jpg?oh=88dee258ee010ab5eb323c4bc2365aed&oe=57328388&__gda__=1463433688_442b2b1a5ae64df6c4b4181948258d20" width="40" height="40">
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a href="#" class="anchor-username"><h4 class="media-heading" id="pageDetailTitle">Created by: Gaurav Srivastava</h4></a> 
+                                    <a href="#" class="anchor-time" id="aboutPage">Frontend Developer</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>             
+                   </section>
+                   <section class="post-body desc-body">
+                       <p id="descBody">
+                        <ul>
+                          <li>Page search using facebook public API.</li>
+                          <li>No external javaScript libraries used.</li>
+                          <li>See particular page details.</li>
+                          <li>Offline storage to store page like data.</li>
+                        </ul>  
+                       </p>
+                   </section>
+                   <section class="post-footer">
+                       <hr>
+                       <div class="post-footer-option">
+                            
+                                
+                                  <a href="https://www.hackerearth.com/@genius.joker" target="_BLANK" >
+                                  <img src="img/he_identity.png" height="30px" width="30px"> 
+                                  </a>
+                         
+                                  <a href="https://in.linkedin.com/in/gaurav-srivastava-743ba0b5" target="_BLANK">
+                                  <img src="img/linkedin_logo.gif" height="30px" width="30px"> 
+                                  </a>
+
+                                  <a href="https://www.facebook.com/genius.joker" target="_BLANK">
+                                  <img src="img/facebook.png" height="30px" width="30px"> 
+                                  </a>
+
+
+                        
+                       </div>
+                   </section>
+                </div>
+            </div>   
+      </div>
+
+
+
+    </div>
+	</body>
 </html>
